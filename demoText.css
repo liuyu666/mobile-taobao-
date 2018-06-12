@@ -1,0 +1,213 @@
+body{
+	font-size: 20px;
+	width:38rem;
+	margin: 0 auto;
+	background-color: lightgray;
+}
+#sup,#pic_content,.icon{
+	width: 38rem;
+	display:box;
+	display:-webkit-box;
+	display:-moz-box;
+	display:-o-box;
+}
+.sup_default{
+	/*background:  url("渐变背景.png") no-repeat;*/
+	background-color: black;
+}
+.scroll{
+	background-color: red;
+	margin:0 auto; 
+	position: fixed; top: 0; left: 0; right: 0; /* 决定了搜索框置顶 */
+  	z-index: 10;
+}
+.no_scroll{
+	background:  url("渐变背景.png") no-repeat;
+}
+.sup_box{
+	height: 3rem;
+	box-flex:1.0;
+	-webkit-box-flex:1.0;
+	-moz-box-flex:1.0;
+	-o-box-flex:1.0;
+}
+.box1{
+	box-flex:7.0;
+	-webkit-box-flex:7.0;
+	-moz-box-flex:7.0;
+	-o-box-flex:7.0;
+}
+.search_box1{
+	position: relative;
+}
+
+
+.jd,.search,.search_input{
+	display: inline-block;
+	position: absolute;
+}
+.jd{
+	width: 1.2rem;
+    height: 1.2rem;
+	margin:0;
+	top: .5rem; 
+	left: 1rem;
+}
+.search{
+	width: 2rem;
+    height: 2rem;
+	margin:0; 
+	left: 3rem;
+}
+.search_input{
+	width: 20rem;
+	line-height: 2rem;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	left: 6rem;
+}
+.search_box2_border{
+	margin-top: 0.5rem;
+	background-color: white;
+	border-radius: 1rem;
+	height: 2rem;
+	width: 100%;
+	position: relative;
+}
+.login_box1{
+	height: 5rem;
+	box-flex:1.0;
+	-webkit-box-flex:1.0;
+	-moz-box-flex:1.0;
+	-o-box-flex:1.0;
+	color: white;
+	font-size: 1rem;
+	text-align: center;
+	line-height: 2rem;
+	margin-top: .5rem;
+}
+.nav_pic_icon{
+	position: absolute;
+	left: 2rem;
+	margin-top: 1rem;
+	display: inline-block;
+	width: 1rem;
+	height: 1rem
+}
+/*轮播图*/
+#content{
+	position: relative;
+}
+.pic{
+	height: 15rem
+}
+.pic li{
+	width:38rem;
+	display: none;
+	position: relative;
+}
+.pic li img{
+	height: 15rem;
+	width:38rem;
+}
+ul .current{
+	display: inline-block;
+	margin: 0 auto;
+}
+.circle{
+	position: absolute;
+	left: 17rem;
+	bottom: 2rem;
+}
+.circle li{
+	display: inline-block;
+	width: .5rem;
+	height: .5rem;
+	border-radius: .25rem;
+	background-color:white;
+}
+.circle .first{
+	background-color: lightblue;
+}
+.pic_top{/*大商品图上面的border*/
+	background-color: white;
+	width: 38rem;
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+	height: 1rem;
+	background-color:#a6e3f3;
+	position: absolute;
+	top: 14rem;
+}
+/*大商品图*/
+#pic_content img{
+	height: 12rem;
+	box-flex:1.0;
+	-webkit-box-flex:1.0;
+	-moz-box-flex:1.0;
+	-o-box-flex:1.0;
+	width: 100%
+}
+.pic_side,.pic_mid{
+	height: 12rem;
+	box-flex:1.0;
+	-webkit-box-flex:1.0;
+	-moz-box-flex:1.0;
+	-o-box-flex:1.0;
+}
+/*雪碧图写nav导航图标*/
+.nav_pic{
+	box-flex:1.0;
+	-webkit-box-flex:1.0;
+	-moz-box-flex:1.0;
+	-o-box-flex:1.0;
+	text-align: center;
+}
+#icon{
+	height: 18rem;
+	background: url(导航图背景.jpg) no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+.nav_pic img{
+	text-align: center;
+	margin:1rem 1.25rem 0.5rem; 
+	height:4.5rem;
+	width:4.5rem;
+}
+/*京东快报*/
+#broadcast{
+	background-color: white;
+	width: 36rem;
+	height: 2.5rem;
+	border-radius:1rem;
+	margin:0 1rem .6rem;
+	position: relative;
+}
+.giftactive_img_box{
+	display: inline-block;
+	position: absolute;
+	left: 1.3rem;
+	top: .6rem;
+}
+.giftactive_img{
+	height: 1rem;
+	width: 4.5rem;
+	display: inline-block;
+}
+#giftactive_demo{
+	display: inline-block;
+	position: absolute;
+	left: 6.2rem;
+	top: .6rem;
+}
+.mingdan i{
+	font-style: normal;
+	color: red;
+	padding-right: 1rem;
+}
+/*签到领京豆*/
+.sign_in{
+	width: 38rem;
+}

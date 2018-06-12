@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="reset.css"/>
+	<link rel="stylesheet" href="demoText.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="vue.js"></script><!-- 
+	<script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+	<script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+	<script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script> -->
+</head>
+<body>
+	<div id="sup" class="sup_default">
+			<div :class = "{sup_box:isActive}">
+				<div v-bind:class="{search_box1:isActive}">
+					<img :class="{nav_pic_icon:isActive}" src="导航条.png" alt=""/><!-- 导航图标 -->
+				</div>
+			</div>
+			<div class = "sup_box box1">
+				<div :class="{search_box2:isActive}"><!-- 中部搜索 -->
+					<div :class="{search_box2_border:isActive}">
+						<img :class="{jd:isActive}" :src="jd" alt=""/><!-- jd小图标 -->
+						<img :class="{search:isActive}" :src="search" alt=""/>
+						<div class="search_input">{{search_word}}</div>
+					</div>
+				</div>
+			</div>
+			<div :class = "{sup_box:isActive}">
+				<!-- 登录 -->
+				<div :class="{login_box1:isActive}">{{login}}</div>
+			</div>
+	</div>
+	<!-- 轮播图，jQuery -->
+	<div id="content">
+    <ul class="pic">
+    	<li class="current"><a href="#"><img src="轮播（2）.webp" alt=""></a></li><!-- 第一张图片 -->
+        <li><a href="#"><img src="轮播（1）.webp" alt=""></a></li>
+        <li><a href="#"><img src="轮播（2）.webp" alt=""></a></li>
+        <li><a href="#"><img src="轮播（3）.webp" alt=""></a></li>
+        <li><a href="#"><img src="轮播（1）.webp" alt=""></a></li>
+    </ul>
+    <div class="pic_top"></div>
+    <ul class="circle"><!-- 小圆点 -->
+        <li class="first"></li>
+        <li ></li>
+        <li ></li>
+        <li ></li>
+        <li ></li>
+    </ul>
+    </div>
+    <!-- 第三部分 一个商品图片-->
+    <div id="pic_content"><!-- 创建vue实例 -->
+    	<div :class="{pic_side:isActive}"><img :src="img_side_left" alt=""></div>
+    	<div :class="{pic_mid:isActive}"><img :src="img_mid" alt=""></div>
+    	<div :class="{pic_side:isActive}"><img :src="img_side_right" alt=""></div>
+    </div>
+    <!-- 图标选项排列 -->
+    <div id="icon"><!-- 创建vue实例 -->
+	    <div class="icon"><!-- 流式布局 -->
+				<div :class="{nav_pic:isActive}" v-for="obj in objects"><!-- 遍历数组中对象的数据 -->
+					<img :src="obj.url" alt="">
+					<span>{{obj.name}}</span>
+				</div>
+	    </div>
+	    <div class="icon"><!-- 流式布局 -->
+				<div :class="{nav_pic:isActive}" v-for="obj in objects">
+					<img :src="obj.url" alt="">
+					<span>{{obj.name}}</span>
+				</div>
+	    </div>
+	</div>
+	<!-- 京东快报 -->
+	<div id="broadcast" class="bar" name="giftactive">
+		<div class="giftactive_img_box"><img class="giftactive_img" src="jd-news-tit.png" alt=""/></div>
+		<div id="giftactive_demo" style="overflow:hidden;height:22px;line-height:22px;">
+			<ul class="mingdan" id="holder" v-for="item in words">
+				<li><i>{{red_word}}</i>{{item}}</li>
+				<li><i>{{red_word}}</i>{{item}}</li>
+				<li><i>{{red_word}}</i>{{item}}</li>
+				<li><i>{{red_word}}</i>{{item}}</li>
+				<li><i>{{red_word}}</i>{{item}}</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 签到领京豆 -->
+	<img class="sign_in" src="5ad412c3Ne38005f5.jpg!q70.jpg" alt=""/>
+	<!-- scroll商品 -->
+	
+
+	<script src="index.js"></script>  <!-- 引入JS文件 -->
+</body>
+</html>
